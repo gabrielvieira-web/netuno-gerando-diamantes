@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/section1.css">
+  <link rel="stylesheet" href="./styles/form.css">
+  <link rel="stylesheet" href="./styles/section2.css">
+  <link rel="stylesheet" href="./styles/section3.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <title>Netuno - Gerando Diamantes</title>
+</head>
+<body>
+  <header class="header">
+    <img src="./assets/logos/logo.png" alt="Logo da Netuno na cor branco" class="header__logo">
+
+    <button class="header__btn" id="btn">
+      <span class="header__btn__menu" id="menu-hamburger"></span>
+    </button>
+
+    <nav class="header__navigation">
+      <ul class="header__list">
+        <li class="header__item">
+          <a href="#" class="header__link">O projeto</a>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">O problema</a>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">Sua Jornada</a>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">Objetivos</a>
+        </li>
+      </ul>
+        <a href="#" class="header__linkDark">Processo Seletivo</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="section1">
+      <div class="section1__containerForm">
+        <img src="./assets/bannertopo.png" alt="Um homem negro e uma mulher branca com notebook felizes" class="section1__imageBanner">
+
+        <div class="section1__containerBorderForm">
+        </div>
+
+        <form class="form">
+          <h2 class="form__title">Formulário de Cadastro</h2>
+
+          <fieldset class="form__fieldset fieldsetData">
+            <h3 class="form__subtitle subtitleData">Preencha seus dados</h3>
+
+            <div class="form__containerInput">
+              <img src="./assets/icons/user.png" alt="icone de usuário" class="form__containerInput__icon">
+              <input type="text" name="nameComplete" id="nameComplete" class="form__containerInput__input inputNameComplete" value="" required>
+              <label for="nameComplete" class="form__containerInput__label" id="label">Nome completo<span>*</span></label>
+            </div>
+
+            <div class="form__containerInput">
+              <img src="./assets/icons/email.png" alt="icone de e-mail" class="form__containerInput__icon">
+              <input type="email" name="email" id="email" class="form__containerInput__input inputEmail" required></input>
+              <label for="email" class="form__containerInput__label" id="label">E-mail<span>*</span></label>
+            </div>
+
+            <div class="form__select">
+              <input type="checkbox" id="state"/>
+              <label for="state" id="selected-value">Estado<span>*</span></label>
+              <img src="./assets/icons/arrow-bottom.png" alt="icone de seta para baixo" id="arrow-bottom">
+              
+              <ul class="form__select__options" id="list-options">
+                <li class="form__select__option" id="option">Acre</li>
+                <li class="form__select__option" id="option">Alagoas</li>
+                <li class="form__select__option" id="option">Amazonas</li>
+                <li class="form__select__option" id="option">Bahia</li>
+                <li class="form__select__option" id="option">Ceará</li>
+                <li class="form__select__option" id="option">Distrito Federal</li>
+                <li class="form__select__option" id="option">Espírito Santo</li>
+                <li class="form__select__option" id="option">Goiás</li>
+                <li class="form__select__option" id="option">Maranhão</li>
+                <li class="form__select__option" id="option">Mato Grosso</li>
+                <li class="form__select__option" id="option">Mato Grosso do Sul</li>
+                <li class="form__select__option" id="option">Minas Gerais</li>
+                <li class="form__select__option" id="option">Pará</li>
+                <li class="form__select__option" id="option">Paraíba</li>
+                <li class="form__select__option" id="option">Paraná</li>
+                <li class="form__select__option" id="option">Pernambuco</li>
+                <li class="form__select__option" id="option">Piauí</li>
+                <li class="form__select__option" id="option">Rio de Janeiro</li>
+                <li class="form__select__option" id="option">Rio Grande do Norte</li>
+                <li class="form__select__option" id="option">Rio Grande do Sul</li>
+                <li class="form__select__option" id="option">Rondônia</li>
+                <li class="form__select__option" id="option">Roraima</li>
+                <li class="form__select__option" id="option">Santa Catarina</li>
+                <li class="form__select__option" id="option">São Paulo</li>
+                <li class="form__select__option" id="option">Sergipe</li>
+                <li class="form__select__option" id="option">Tocantins</li>
+              </ul>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset fieldsetCheckbox">
+            <h3 class="form__subtitle subtitleCheckbox">Conhecimento de Programação*</h3>
+            <div class="form__container">
+              <div class="form__containerCheckbox">
+                <input type="checkbox" name="html" id="html" checked class="form__containerCheckbox__input"/>
+                <label for="html" class="form__containerCheckbox__label">HTML</label>
+              </div>
+  
+              <div class="form__containerCheckbox">
+                <input type="checkbox" name="css" id="css" class="form__containerCheckbox__input"/>
+                <label for="css" class="form__containerCheckbox__label">CSS</label>
+              </div>
+  
+              <div class="form__containerCheckbox">
+                <input type="checkbox" name="javascript" id="javascript" checked class="form__containerCheckbox__input"/>
+                <label for="javascript" class="form__containerCheckbox__label">JavaScript</label>
+              </div>
+  
+              <div class="form__containerCheckbox">
+                <input type="checkbox" name="php" id="php" class="form__containerCheckbox__input"/>
+                <label for="php" class="form__containerCheckbox__label">PHP</label>
+              </div>
+  
+              <div class="form__containerCheckbox">
+                <input type="checkbox" name=".net" id=".net" class="form__containerCheckbox__input"/>
+                <label for=".net" class="form__containerCheckbox__label">.NET</label>
+              </div>
+  
+              <div class="form__containerCheckbox">
+                <input type="checkbox" name="vue.js" id="vue.js" class="form__containerCheckbox__input"/>
+                <label for="vue.js" class="form__containerCheckbox__label">Vue.JS</label>
+              </div>
+  
+              <div class="form__containerCheckbox">
+                <input type="checkbox" name="react.js" id="react.js" class="form__containerCheckbox__input"/>
+                <label for="react.js" class="form__containerCheckbox__label">React.JS</label>
+              </div>
+  
+              <div class="form__containerCheckbox">
+                <input type="checkbox" name="react-native" id="react-native" checked class="form__containerCheckbox__input"/>
+                <label for="react-native" class="form__containerCheckbox__label">React Native</label>
+              </div>
+  
+              <div class="form__containerCheckbox">
+                <input type="checkbox" name="node" id="node" class="form__containerCheckbox__input"/>
+                <label for="node" class="form__containerCheckbox__label">Node</label>
+              </div>
+  
+              <div class="form__containerCheckbox">
+                <input type="checkbox" name="python" id="python" class="form__containerCheckbox__input"/>
+                <label for="python" class="form__containerCheckbox__label">Python</label>
+              </div>
+  
+              <div class="form__containerCheckbox">
+                <input type="checkbox" name="flutter" id="flutter" checked class="form__containerCheckbox__input"/>
+                <label for="flutter" class="form__containerCheckbox__label">Flutter</label>
+              </div>
+  
+              <div class="form__containerCheckbox">
+                <input type="checkbox" name="outras" id="outras" checked class="form__containerCheckbox__input"/>
+                <label for="outras" class="form__containerCheckbox__label">Outras</label>
+              </div>
+            </div>
+          </fieldset>
+            
+          <fieldset class="form__fieldset fieldsetRadio">
+            <h3 class="form__subtitle">Já trabalhou com desenvolvimento?</h3>
+            <div class="form__container">
+              <div class="form__containerRadio">
+                <input type="radio" name="yesOrNo" id="not" class="form__containerRadio__input" checked>
+                <label for="not" class="form__containerRadio__label">Não</label>
+              </div>
+              <div class="form__containerRadio">
+                <input type="radio" name="yesOrNo" id="yes" class="form__containerRadio__input">
+                <label for="yes" class="form__containerRadio__label">Sim</label>
+              </div>
+            </div>
+          </fieldset>
+  
+          <p class="form__text">(*) Campos obrigatórios</p>
+
+          <div class="form__containerSubmit">
+            <button class="form__containerSubmit__btn">Enviar</button>
+            <p class="form__containerSubmit__text">Ao clicar em enviar, você concorda com todos os termos de uso de dados descritos em <a href="#" class="form__containerSubmit__link">política de privacidade.</a></p>
+          </div>
+        </form>
+      </div>
+
+      <div class="section1__containerProject">
+        <img src="./assets/dev.png" alt="Várias abas de editor de código" class="section1__imageDev">
+
+        <div class="section1__containerContent">
+          <h2 class="section1__title">O Projeto</h2>
+          <p class="section1__text">Com o "novo normal" causado pela pandemia dos últimos anos, mais empresas no mundo têm aberto oportunidades no modelo Home Office.</p>
+          <p class="section1__text">Alinhado a depreciação da moeda local, temos um alto índice de profissionais migrando para trabalhos em outros países.</p>
+          <p class="section1__text">O projeto Netuno, idealizado pela Fasters, tem por objetivo reduzir o estresses causados por recrutamento e turn over na área de tecnologia, bem como gerar oportunidades de carreira para novos profissionais.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section2">
+        <div class="section2__containerProblem">
+          <img src="./assets/container2.png" alt="Uma mulher com uma postura empoderada, de blusa branca, cabelo preto e cor branca" class="section2__containerProblem__image">
+
+          <div class="section2__containerProblem__containerContent">
+            <h2 class="section2__containerProblem__containerContent__title">O Problema</h2>
+            <p class="section2__containerProblem__containerContent__text">Falta de profissionais de TI no Mercado brasileiro: um problema que demanda atenção urgente.</p>
+            <p class="section2__containerProblem__containerContent__text">Estima-se que atualmente tenhamos um déficit de 408 mil postos de trabalho, com perdas se acumulando na casa dos R$167 bilhões, de acordo com a Softex, uma organização social voltada ao fomento da área de TI.</p>
+            <p class="section2__containerProblem__containerContent__text">Um dos principais fatores dessa falta de profissionais é o êxodo de profissionais para o exterior.</p>
+          </div>
+        </div>
+
+        <div class="section2__containerArticles">
+          <article class="section2__article">
+            <h3 class="section2__article__title">Oportunidade</h3>
+            <p class="section2__article__text">Acreditamos que a combinação de interesse, dedicação e oportunidade pode causar um grande impacto nas pessoas, nas organizações e no mundo.</p>
+          </article>
+          <article class="section2__article">
+            <h3 class="section2__article__title">Comunidade</h3>
+            <p class="section2__article__text">Dentro de um grupo de pessoas mais experientes e acessíveis, a curva de aprendizado ocorre de forma mais rápida, fluída e eficiente.</p>
+          </article>
+          <article class="section2__article">
+            <h3 class="section2__article__title">Experiencia Real</h3>
+            <p class="section2__article__text">Entendemos que somente as experiências reais poderão trazer a bagagem que a teoria não o pode fazer.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="section2__containerJourney">
+        <h2 class="section2__containerJourney__title">Sua Jornada</h2>
+        <ul class="section2__containerJourney__list">
+          <li class="section2__containerJourney__item">
+            <div class="section2__containerJourney__backgroundIcon">
+              <img src="./assets/icons/calendary.png" alt="icone de calendário" class="section2__containerJourney__icon">
+            </div>
+            <p class="section2__containerJourney__text">Programas de 4 meses de duração, sendo 6 horas/dia.</p>
+          </li>
+          <li class="section2__containerJourney__item">
+            <div class="section2__containerJourney__backgroundIcon">
+              <img src="./assets/icons/medal.png" alt="icone de medalha" class="section2__containerJourney__icon">
+            </div>
+            <p class="section2__containerJourney__text">Do Zero ao Junior Promissor em 4 meses.</p>
+          </li>
+          <li class="section2__containerJourney__item">
+            <div class="section2__containerJourney__backgroundIcon">
+              <img src="./assets/icons/clock.png" alt="icone de relógio" class="section2__containerJourney__icon">
+            </div>
+            <p class="section2__containerJourney__text">640 horas de aplicação prática dos conceitos.</p>
+          </li>
+          <li class="section2__containerJourney__item">
+            <div class="section2__containerJourney__backgroundIcon">
+              <img src="./assets/icons/home.png" alt="icone de home" class="section2__containerJourney__icon">
+            </div>
+            <p class="section2__containerJourney__text">Mentoria individual e coletiva em padrão ágil.</p>
+          </li>
+          <li class="section2__containerJourney__item">
+            <div class="section2__containerJourney__backgroundIcon">
+              <img src="./assets/icons/group.png" alt="icone de pessoas em grupo" class="section2__containerJourney__icon">
+            </div>
+            <p class="section2__containerJourney__text">100% Home Office com plataformas de cursos online.</p>
+          </li>
+          <li class="section2__containerJourney__item">
+            <div class="section2__containerJourney__backgroundIcon">
+              <img src="./assets/icons/target.png" alt="icone de alvo" class="section2__containerJourney__icon">
+            </div>
+            <p class="section2__containerJourney__text">Variedade de áreas dentro da tecnologia.</p>
+          </li>
+        </ul>
+  
+        <a href="#" class="section2__containerJourney__link">
+          Quero me cadastrar para o <strong class="section2__containerJourney__link__highlightedText">Processo Seletivo</strong>
+          <img src="./assets/icons/enter.png" alt="icone de entrar" class="section2__containerJourney__link__image">
+        </a>
+        <img src="./assets/elements/vector1.png" alt="icone vector azul" class="section2__containerJourney__image">
+      </div>
+    </section>
+
+    <section class="section3">
+      <h2 class="section3__title">Objetivos</h2>
+      <div class="section3__containerArticles">
+        <article class="section3__article">
+          <h3 class="section3__article__title">Otimizar</h3>
+          <p class="section3__article__text">Otimizar todo processo de contratação chegando a contribuir com uma economia de 40% no processo de recrutamento.</p>
+        </article>
+        <article class="section3__article">
+          <h3 class="section3__article__title">Gerar</h3>
+          <p class="section3__article__text">Gerar novas oportunidades de carreira para pessoas interessadas em ingressar na área ou migrar de outras áreas que esteja descontente.</p>
+        </article>
+        <article class="section3__article">
+          <h3 class="section3__article__title">Filtrar</h3>
+          <p class="section3__article__text">Criar oportunidades brilhantes para profissionais que se destacarem junto a parceiros estratégicos de negócios.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__containerSocials">
+        <img src="./assets/logos/logo+slogan.png" alt="Logo da netuno mais slogan: 'Gerando Diamantes'" class="footer__containerSocials__image">
+        <ul class="footer__containerSocial__list">
+          <li class="footer__containerSocial__item">
+            <a href="#" class="footer__containerSocial__link">
+              <img src="./assets/icons/facebook.png" alt="icone do Facebook" class="footer__containerSocial__icon">
+            </a>
+          </li>
+          <li class="footer__containerSocial__item">
+            <a href="#" class="footer__containerSocial__link">
+              <img src="./assets/icons/instagram.png" alt="icone do Instagram" class="footer__containerSocial__icon">
+            </a>
+          </li>
+          <li class="footer__containerSocial__item">
+            <a href="#" class="footer__containerSocial__link">
+              <img src="./assets/icons/linkedin.png" alt="icone do Linkedin" class="footer__containerSocial__icon">
+            </a>
+          </li>
+        </ul>
+        <p class="footer__containerSocial__text">Netuno© 2024 - Todos os direitos reservados</p>
+      </div>
+  
+      <a href="#" class="footer__link">Processo Seletivo</a>
+  
+      <nav class="footer__navigation">
+        <ul class="footer__navigation__list">
+          <li class="footer__navigation__item">
+            <a href="#" class="footer__navigation__link">O Projeto</a>
+          </li>
+          <li class="footer__navigation__item">
+            <a href="#" class="footer__navigation__link">O Problema</a>
+          </li>
+          <li class="footer__navigation__item">
+            <a href="#" class="footer__navigation__link">Sua Jornada</a>
+          </li>
+          <li class="footer__navigation__item">
+            <a href="#" class="footer__navigation__link">Objetivos</a>
+          </li>
+        </ul>
+      </nav>
+  
+      <div class="footer__containerContact">
+        <h4 class="footer__containerContact__title">Contato</h4>
+        <p class="footer__containerContact__text">11 91234-5678</p>
+        <p class="footer__containerContact__text">contato@netuno.com.br</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
